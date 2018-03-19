@@ -4,4 +4,14 @@
   <welcome-file-list>
     <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>accountlist</servlet-name>
+    <servlet-class>jap.com.Accountlist</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>accountlist</servlet-name>
+    <url-pattern>/accountlist</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

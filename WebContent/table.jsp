@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -13,6 +14,10 @@
 </head>
 
 <body>
+<%
+String temp = (String)request.getAttribute("temp");
+System.out.print(temp);
+%>
 <div id="container">
 	<div id="hd"></div>
     <div id="bd">
@@ -134,30 +139,24 @@
 <script type="text/javascript">
 	$('select').select();
 	var head = [{
-				label: 'ID',
+				label:'日付',
 				width: 100,
 				sortable: 'default',
 				name: 'id'	
 			},{
-				label:'用户名',
+				label:'種類',
 				width: 150,
 				sortable: 'default',
 				name:'name'	
 			},{
-				label:'昵称',
+				label:'金額',
 				width:150	
 			},{
-				label: '籍贯',
+				label:'領収書コード',
 				width: 150	
 			},{
-				label: '毕业院校',
-				minWidth: 200	
-			},{
-				label: '出生日期',
-				width: 120	
-			},{
-				label: '是否审核',
-				width:100	
+				label:'備考',
+				minWidth: 150	
 			}];
 			
 	var oper = [{label:'删除',onclick:function(){
@@ -165,6 +164,8 @@
 				}},{label:'编辑',onclick: function(){
 					alert('编辑')	
 				}}]
+	<%=temp%>
+	/*
 	var tbody = [
 					["201301","admin","熊猫王子","江苏南京","南京林业大学","1982-10-18","已审核",oper], 
 					["201302","uimaker","小牛","山东济南","山东大学","1989-10-18","已审核",oper],
@@ -181,12 +182,12 @@
 					["201301","admin","熊猫王子","江苏南京","南京林业大学","1982-10-18","已审核",oper], 
 					["201302","uimaker","小牛","山东济南","山东大学","1989-10-18","已审核",oper],
 					["201301","admin","熊猫王子","江苏南京","南京林业大学","1982-10-18","已审核",oper]]
-					
+	 */	
 					
 		$('.grid').Grid({
 			thead: head,
 			tbody: null,
-			height:400,
+			height:100,
 			checkbox: {
 				single:true	
 			},

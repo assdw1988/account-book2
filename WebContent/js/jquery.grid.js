@@ -800,6 +800,7 @@
 			if(options.headCount == 2){
 				tableHead = _define.headData;	
 			}
+			
 			for(var i = 0,rowLen = tableBody.length;i < rowLen; i++){//行遍历
 				var rowData = tableBody[i];//记录每一行的数据
 				var $tr = $('<tr></tr>'),tdArr = [];	

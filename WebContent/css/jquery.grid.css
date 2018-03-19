@@ -92,8 +92,6 @@
 .ui-table-tbody .ui-nodata-tip{position:absolute;top:50px;left:50%;margin:35px 0 0 -130px;width:6em;}
 .ui-table-loading{position:absolute;top:60px;left:50%;height:64px;margin:35px 0 0 -130px;padding-left:74px;line-height:64px;font-size:24px;color:#C7C7C7;background:url(img/table/loading.gif) no-repeat left center;}
 
-
-
 /*头部阴影*/
 .ui-table-thead-shadow{position:absolute;left:0;right:0; bottom:0; height:3px; background:url(../img/skin_/thbtm.png);z-index:10;}
 

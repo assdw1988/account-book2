@@ -185,7 +185,6 @@ Menu.prototype._bindEvent = function(){
 Menu.prototype._select = function($this){
 	var id = $this.attr('data-id'),
 		opened = this.cacheOpen[id];
-		
 	// 是否已经存在
 	if(opened){
 		this._show($this);	

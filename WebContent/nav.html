@@ -12,7 +12,6 @@
 </head>
 
 <body>
-<form action="./accountBookInit" id="form1" method="post">
 <div id="container">
 	<div id="bd">
     	<div class="sidebar">
@@ -25,7 +24,7 @@
                 	<ul class="subnav">
                     	<li class="subnav-li current" href="index.html" data-id="1"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">ホーム</span></a></li>
                         <li class="subnav-li" href="form.html" data-id="2"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">家計簿情報追加</span></a></li>
-                        <li class="subnav-li" onclick="alert(222222)" href="table.html" data-id="3"><a href="javascript:" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">家計簿一覧</span></a></li>
+                        <li class="subnav-li" href="./accountlist" data-id="3"><a href="javascript:" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">家計簿一覧</span></a></li>
                         <li class="subnav-li" data-id="4"><a href="javascript:;" class="ue-clear"><i class="subnav-icon"></i><span class="subnav-text">カスタマイズ1</span></a></li>
                     </ul>
                 </li>
@@ -73,14 +72,13 @@
     <div class="opt-panel-br"></div>
     <div class="opt-panel-bl"></div>
 </div>
-</form>
 </body>
+
+
 <script type="text/javascript" src="js/nav.js"></script>
 <script type="text/javascript" src="js/Menu.js"></script>
 <script type="text/javascript" src="js/jquery.ztree.core-3.5.js"></script>
-<script type="text/javascript">
-	
-	
+<script type="text/javascript">	
 	var menu = new Menu({
 		defaultSelect: $('.nav').find('li[data-id="1"]')	
 	});
@@ -131,9 +129,5 @@
 			 $('.more-bab-list').hide();
 		}
     });
-	
-	function check_username(){
-	   alert("myfunction");
-	}
 </script>
 </html>

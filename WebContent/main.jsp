@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -41,8 +42,8 @@
         	<i class="home"><a href="javascript:;"></a></i>
         	<div class="nav-wrap">
                 <ul class="nav ue-clear">
-                    <li><a href="javascript:;">平台管理</a></li>
-                    <li><a href="javascript:;">系统管理</a></li>
+                    <li><a href="javascript:;">ホーム</a></li>
+                    <li><a href="javascript:;">系统安全</a></li>
                     <li><a href="javascript:;">安全管理</a></li>
                     <li><a href="javascript:;">数据中心</a></li>
                     <li><a href="javascript:;">表单管理</a></li>
